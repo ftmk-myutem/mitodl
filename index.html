@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#071a33">
+  <meta name="description" content="Halaman rasmi pautan Kajian Pasaran Master of Information Technology (Interactive Digital Technologies) secara Open and Distance Learning (ODL), FTMK UTeM.">
+  <!-- Satu mekanisme pengalihan sahaja: meta refresh. JavaScript hanya memaparkan kira detik. -->
+  <meta http-equiv="refresh" content="2;url=https://script.google.com/macros/s/AKfycbzgO-fEO5_EwSk5WVdrP8UQmnTjkl0aKjoq_lNFN01UwR30US1mvTFr7yMuq55f7yM/exec">
+  <title>Kajian Pasaran MIT ODL | FTMK UTeM</title>
+  <style>
+    :root {
+      --navy:#071a33;
+      --navy-2:#102a4d;
+      --blue:#1167d8;
+      --cyan:#10b9c6;
+      --gold:#ffbf47;
+      --ink:#142235;
+      --muted:#617086;
+      --line:#dce5ef;
+      --success:#138a5b;
+      --shadow:0 18px 55px rgba(7,26,51,.14);
+    }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      margin:0;
+      min-height:100vh;
+      font-family:"Avenir Next","Segoe UI",Arial,sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 8% 5%,rgba(16,185,198,.17),transparent 26rem),
+        radial-gradient(circle at 92% 12%,rgba(17,103,216,.16),transparent 28rem),
+        linear-gradient(180deg,#eef5fb 0%,#f8fbfd 48%,#edf4f8 100%);
+    }
+    a { color:inherit; }
+    a:focus-visible { outline:3px solid var(--gold);outline-offset:5px; }
+    .app-shell { width:min(1120px,calc(100% - 28px)); margin:22px auto 45px; }
+    .masthead { display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:18px; }
+    .brand { display:flex;align-items:center;gap:15px;min-width:0;text-decoration:none; }
+    .brand-logo { width:178px;min-width:140px;display:grid;place-items:center;padding:6px 10px 5px;border:1px solid #e1e7ef;background:#fff;border-radius:14px;box-shadow:0 5px 17px rgba(7,26,51,.06); }
+    .brand-logo img { width:100%;height:auto;display:block; }
+    .brand-name { display:grid;gap:3px; }
+    .brand-name strong { color:#102a4d;font-size:.89rem;letter-spacing:.05px; }
+    .brand-name span { color:var(--muted);font-size:.76rem; }
+    .status { display:flex;align-items:center;gap:9px;color:#36546a;font-size:.77rem;font-weight:800;white-space:nowrap; }
+    .status-dot { width:9px;height:9px;background:var(--success);border-radius:50%;box-shadow:0 0 0 5px rgba(19,138,91,.1); }
+    .hero {
+      position:relative;overflow:hidden;display:grid;grid-template-columns:1.23fr .77fr;
+      min-height:335px;color:white;border-radius:28px;
+      background:linear-gradient(135deg,var(--navy) 0%,#0a3765 57%,#0b6f8b 100%);
+      box-shadow:var(--shadow);
+    }
+    .hero::before,.hero::after { content:"";position:absolute;border-radius:50%;pointer-events:none; }
+    .hero::before { width:290px;height:290px;right:-80px;top:-115px;background:rgba(16,185,198,.2); }
+    .hero::after { width:190px;height:190px;left:41%;bottom:-125px;background:rgba(255,191,71,.14); }
+    .hero-copy { position:relative;z-index:2;padding:47px 46px 66px; }
+    .eyebrow { display:flex;align-items:center;gap:9px;font-size:.72rem;line-height:1.4;font-weight:800;letter-spacing:1.7px;text-transform:uppercase;color:#9fe8ef; }
+    .eyebrow::before { content:"";flex:0 0 auto;width:34px;height:3px;border-radius:8px;background:var(--gold); }
+    h1 { margin:17px 0 16px;font-size:clamp(2.05rem,4vw,3.4rem);line-height:1.075;letter-spacing:-1.65px;max-width:740px; }
+    .hero p { margin:0;max-width:630px;color:#d9e9f5;font-size:1rem;line-height:1.72; }
+    .hero p strong { color:white; }
+    .hero-meta { display:flex;flex-wrap:wrap;gap:9px;margin-top:26px; }
+    .meta-pill { padding:8px 12px;border:1px solid rgba(255,255,255,.21);border-radius:999px;background:rgba(255,255,255,.075);font-size:.76rem;font-weight:750; }
+    .hero-visual { position:relative;z-index:1;display:grid;place-items:center;padding:18px 24px 60px; }
+    .orbit-card { width:min(286px,100%);aspect-ratio:1;position:relative;display:grid;place-items:center;border-radius:50%;background:radial-gradient(circle,rgba(16,185,198,.27),rgba(255,255,255,.035) 55%,transparent 56%); }
+    .orbit { position:absolute;inset:18%;border:1px solid rgba(255,255,255,.28);border-radius:50%;animation:spin 18s linear infinite; }
+    .orbit.two { inset:6%;animation-duration:26s;animation-direction:reverse; }
+    .orb { position:absolute;top:-9px;left:50%;width:18px;height:18px;border-radius:50%;background:var(--gold);box-shadow:0 0 24px rgba(255,191,71,.8); }
+    .orbit.two .orb { left:16%;top:72%;background:#8bf1f7;box-shadow:0 0 24px rgba(139,241,247,.8); }
+    .core { width:117px;height:117px;display:grid;place-items:center;border-radius:30px;background:linear-gradient(145deg,#fff,#d6fbff);color:var(--navy);box-shadow:0 22px 50px rgba(0,0,0,.26);transform:rotate(-5deg); }
+    .core svg { width:68px;height:68px; }
+    .redirect-card { position:relative;z-index:3;width:calc(100% - 52px);margin:-37px auto 0;padding:27px 31px 29px;background:#fff;border:1px solid rgba(214,225,236,.94);border-radius:24px;box-shadow:0 19px 48px rgba(7,26,51,.12); }
+    .card-top { display:flex;justify-content:space-between;align-items:center;gap:18px; }
+    .card-heading { display:flex;align-items:flex-start;gap:14px; }
+    .redirect-icon { flex:0 0 auto;width:46px;height:46px;display:grid;place-items:center;border-radius:14px;background:#e8f8fa;color:#0a8994; }
+    .redirect-icon svg { width:26px;height:26px; }
+    h2 { margin:0 0 6px;font-size:1.3rem;line-height:1.25;letter-spacing:-.45px; }
+    .card-heading p { margin:0;color:var(--muted);font-size:.86rem;line-height:1.55; }
+    .counter { flex:0 0 auto;display:flex;align-items:baseline;gap:5px;padding:10px 14px;border-radius:13px;color:#194b78;background:#eef5ff; }
+    .counter strong { font-size:1.75rem;line-height:1;font-variant-numeric:tabular-nums; }
+    .counter small { font-size:.76rem;font-weight:850; }
+    .progress { height:7px;background:#e8eef4;border-radius:20px;overflow:hidden;margin:23px 0 21px; }
+    .progress span { display:block;width:0;height:100%;border-radius:20px;background:linear-gradient(90deg,var(--blue),var(--cyan));transition:width .12s linear; }
+    .card-bottom { display:flex;justify-content:space-between;align-items:center;gap:16px; }
+    .support { margin:0;max-width:380px;color:#687b8e;font-size:.8rem;line-height:1.5; }
+    .btn { display:inline-flex;justify-content:center;align-items:center;gap:11px;padding:13px 19px;border-radius:13px;text-decoration:none;white-space:nowrap;font-size:.91rem;font-weight:900;background:linear-gradient(100deg,var(--blue),#0d89a0);color:white;box-shadow:0 9px 20px rgba(17,103,216,.22);transition:transform .2s,box-shadow .2s; }
+    .btn:hover { transform:translateY(-2px);box-shadow:0 13px 25px rgba(17,103,216,.29); }
+    .btn svg { width:17px;height:17px; }
+    .details { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:19px 26px 0; }
+    .detail { padding:18px 17px;border:1px solid #dce5ef;border-radius:17px;background:rgba(255,255,255,.83); }
+    .detail-label { font-size:.68rem;font-weight:900;letter-spacing:1.1px;text-transform:uppercase;color:#7a8a9b; }
+    .detail strong { display:block;margin:8px 0 5px;color:#163c5c;font-size:.92rem; }
+    .detail p { margin:0;color:var(--muted);font-size:.78rem;line-height:1.53; }
+    .footer { margin-top:22px;text-align:center;color:#7a899a;font-size:.74rem;line-height:1.65; }
+    .footer a { color:#305c89;text-underline-offset:3px;font-weight:750; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    @media (max-width:850px) {
+      .hero { grid-template-columns:1fr; }
+      .hero-visual { display:none; }
+      .hero-copy { padding:42px 36px 69px; }
+      .details { margin-inline:20px; }
+    }
+    @media (max-width:620px) {
+      .app-shell { width:calc(100% - 18px);margin:10px auto 28px; }
+      .masthead { gap:12px;margin:0 4px 12px; }
+      .brand { gap:9px; }
+      .brand-logo { min-width:0;width:127px;padding:5px 6px; }
+      .brand-name strong { font-size:.77rem; }
+      .brand-name span { font-size:.68rem; }
+      .status { display:none; }
+      .hero { border-radius:21px;min-height:0; }
+      .hero-copy { padding:34px 24px 75px; }
+      h1 { font-size:clamp(2rem,8.2vw,2.85rem);letter-spacing:-1.3px; }
+      .hero p { font-size:.91rem; }
+      .eyebrow { letter-spacing:1.1px;font-size:.67rem; }
+      .hero-meta { margin-top:21px; }
+      .meta-pill { font-size:.7rem; }
+      .redirect-card { width:calc(100% - 16px);margin-top:-44px;padding:21px 19px;border-radius:20px; }
+      .card-top { align-items:flex-start; }
+      .redirect-icon { width:39px;height:39px;border-radius:12px; }
+      .card-heading { gap:10px; }
+      h2 { font-size:1.1rem; }
+      .counter { padding:9px;gap:2px; }
+      .counter strong { font-size:1.4rem; }
+      .card-bottom { flex-direction:column-reverse;align-items:stretch; }
+      .support { text-align:center;max-width:none; }
+      .btn { width:100%; }
+      .details { grid-template-columns:1fr;gap:10px;margin:14px 8px 0; }
+      .detail { padding:14px 15px; }
+    }
+    @media (prefers-reduced-motion:reduce) {
+      *,*::before,*::after { animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="masthead">
+      <div class="brand" aria-label="Fakulti Teknologi Maklumat dan Komunikasi, UTeM">
+        <div class="brand-logo"><img src="Logo-FTMK-1024x383.png" alt="Logo Fakulti Teknologi Maklumat dan Komunikasi (FTMK)" width="1024" height="383"></div>
+        <div class="brand-name"><strong>FTMK · UTeM</strong><span>Kajian Pasaran MIT ODL</span></div>
+      </div>
+      <div class="status"><span class="status-dot" aria-hidden="true"></span> Pautan borang tersedia</div>
+    </header>
+
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <div class="eyebrow">FTMK · UTeM · Kajian Pasaran v1.2</div>
+        <h1 id="page-title">Bentuk Masa Depan MIT ODL</h1>
+        <p>Kongsikan pandangan anda tentang cadangan <strong>Master of Information Technology (Interactive Digital Technologies)</strong> melalui <strong>Open and Distance Learning (ODL)</strong>.</p>
+        <div class="hero-meta" aria-label="Maklumat kajian">
+          <span class="meta-pill">⏱ 7–10 minit</span>
+          <span class="meta-pill">✦ 3 kategori responden</span>
+          <span class="meta-pill">☁ Borang dalam talian</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit-card">
+          <div class="orbit"><span class="orb"></span></div>
+          <div class="orbit two"><span class="orb"></span></div>
+          <div class="core">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="12" y="18" width="40" height="31" rx="5"/>
+              <path d="M22 55h20M32 49v6M23 30l7 6-7 6m14 0h7"/>
+              <circle cx="46" cy="13" r="5" fill="#10b9c6" stroke="none"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="redirect-card" aria-labelledby="redirect-title">
+      <div class="card-top">
+        <div class="card-heading">
+          <div class="redirect-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14m-6-6 6 6-6 6"/><path d="M3 4h4M3 20h4"/>
+            </svg>
+          </div>
+          <div>
+            <h2 id="redirect-title">Menghubungkan anda ke borang kajian</h2>
+            <p>Halaman akan beralih secara automatik dalam beberapa saat.</p>
+          </div>
+        </div>
+        <div class="counter" aria-label="Masa sebelum dialihkan"><strong id="seconds">2</strong><small>saat</small></div>
+      </div>
+      <div class="progress" role="progressbar" aria-label="Kemajuan pengalihan" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress" ><span id="progressFill"></span></div>
+      <div class="card-bottom">
+        <p class="support">Jika pengalihan automatik tidak berlaku, gunakan butang di sebelah.</p>
+        <a class="btn" id="openForm" target="_top" href="https://script.google.com/macros/s/AKfycbzgO-fEO5_EwSk5WVdrP8UQmnTjkl0aKjoq_lNFN01UwR30US1mvTFr7yMuq55f7yM/exec">
+          Buka Borang Kajian
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="details" aria-label="Maklumat tambahan">
+      <article class="detail"><span class="detail-label">01 · Program</span><strong>MIT Interactive Digital Technologies</strong><p>Cadangan program peringkat Sarjana berteraskan teknologi digital interaktif.</p></article>
+      <article class="detail"><span class="detail-label">02 · Kaedah</span><strong>Open and Distance Learning</strong><p>Pendekatan pengajian yang menyokong pembelajaran fleksibel.</p></article>
+      <article class="detail"><span class="detail-label">03 · Sumbangan anda</span><strong>Maklum balas bermakna</strong><p>Pandangan bakal pelajar, industri dan pakar akademik membantu memperhalusi program.</p></article>
+    </section>
+
+    <footer class="footer">Kajian Pasaran MIT ODL · Instrumen v1.2<br>Fakulti Teknologi Maklumat dan Komunikasi · Universiti Teknikal Malaysia Melaka<br>Halaman ini hanya memaut ke borang kajian dan tidak mengumpul respons anda.</footer>
+  </main>
+
+  <script>
+    // Animasi sahaja. Pengalihan automatik dikendalikan oleh meta refresh
+    // supaya Safari tidak menerima dua permintaan navigasi serentak.
+    (function () {
+      'use strict';
+      const DELAY_MS = 2000;
+      const started = Date.now();
+      const secondsEl = document.getElementById('seconds');
+      const progressEl = document.getElementById('progress');
+      const fillEl = document.getElementById('progressFill');
+      const supportEl = document.querySelector('.support');
+      function update() {
+        const elapsed = Math.max(0, Date.now() - started);
+        const portion = Math.min(elapsed / DELAY_MS, 1);
+        secondsEl.textContent = String(Math.ceil(Math.max(DELAY_MS - elapsed, 0) / 1000));
+        fillEl.style.width = (portion * 100).toFixed(1) + '%';
+        progressEl.setAttribute('aria-valuenow', String(Math.round(portion * 100)));
+        // Sekiranya penyemak imbas menyekat pengalihan, pautan manual kekal boleh diakses.
+        if (elapsed >= 4000) {
+          clearInterval(timer);
+          supportEl.textContent = 'Jika Safari tidak beralih secara automatik, tekan “Buka Borang Kajian” untuk meneruskan.';
+        }
+      }
+      const timer = setInterval(update, 100);
+      update();
+    })();
+  </script>
+</body>
+</html>
